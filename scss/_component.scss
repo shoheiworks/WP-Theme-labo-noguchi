@@ -1,0 +1,226 @@
+
+// // Ver 0.1
+
+// /* --------------------------------------------------
+// Component
+// Column
+// - .column3
+
+// Hr
+
+// Common
+// .- .att
+
+// -------------------------------------------------- */
+/* Cler fix Start */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.clearfix {
+  display: inline-table;
+  min-height: 1px;
+}
+* html .clearfix {
+  height: 1px;
+}
+.clearfix {
+  display: block;
+}
+.clear {
+  clear: both;
+}
+/* Clearfix End */
+
+/* Clear */
+.cl-b{clear: both;}
+.cl-r{clear: right;}
+.cl-l{clear: left;}
+
+/* float */
+.fr{float: right;}
+.fl{float: left;}
+
+/* --------------------------------------------------
+Old Verstion
+-------------------------------------------------- */
+.clearfix:after { content: "";  display: block; clear: both;}
+.cll { clear: left;}
+.clr { clear: right;}
+.clboth {clear: both;}
+
+.left { float: left;}
+.right { float: right;}
+
+img {float: none ;}
+
+.dispnone {display: none;}
+
+
+// /* --------------------------------------------------
+// Column => column > li & img
+// -------------------------------------------------- */
+ul.column2 {margin:0 auto;}
+.column2 {
+  @include columnRow;
+    li {
+        width: 46%;
+        @include mab(32);
+    }
+}
+.column3 {
+	@include columnRow;
+    li {
+        width: 30%;
+        @include mab(32);
+    }
+    img {
+        width: 98%;
+        height: 98%;
+        display: block;
+    }
+    h4 {
+        @include mab(8);
+    }
+}
+.columnCol {
+  @include columnCol;
+  li {
+    @include mab(16);
+  }
+}
+
+// /* --------------------------------------------------
+// Common
+// -------------------------------------------------- */
+.att {
+	color: $colAtt !important;
+	@include fos(12);
+}
+
+// /* Link */
+a.inLink {
+    color: $colInLink;
+}
+// /* --------------------------------------------------
+// h1
+// -------------------------------------------------- */
+.h1-style-01 {
+  text-align: center;
+  background-color: $colSub01;
+  color: #FFFFFF;
+  @include padding(8,0,8,0);
+  @include mab(32);
+}
+.h1-style-02 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  color: #FFFFFF;
+  @include fos(32);
+  text-align: center;
+    @include mque(pc) {
+      @include fos(48);
+    }
+}
+.h1-style-03 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  color: $colMain;
+  @include fos(32);
+  text-align: center;
+    @include mque(pc) {
+      @include fos(48);
+    }
+}
+/* --------------------------------------------------
+hr
+-------------------------------------------------- */
+.hr-style-01 {
+    height: 10px ;
+    background-color: $colMain;
+}
+.hr-style-02 {
+    height: 2px;
+    background-color: $colMain;
+    border: 0;
+}
+
+.hr-style-02:before {
+  top: -0.5em;
+  height: 1em;
+}
+
+.hr-style-02:after {
+  content: '';
+  height: 0.5em;
+  top: 1px;
+  background: $colMain;
+}
+
+.hr-style-02:before, .hr-style-02:after {
+  content: '';
+  width: 100%;
+}
+
+.hr-style-02, .hr-style-02:before {
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 80%);
+}
+
+.hr-style-03 {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.hr-style-04 {
+    @include hei(2);
+    background: $colMain;
+}
+
+.hr-style-h1 {
+    position: relative;
+    top: -16px;
+    top: -1rem;
+    @include hei(4);
+    background: $colMain;
+    border: 1px solid $colMain;
+    border-radius: 7px 7px 7px 7px;
+}
+
+
+hr.style-newarrive-h {
+    padding: 0;
+    border: none;
+    // border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.style-newarrive-h:after {
+    content: "New Arrive";
+    display: inline-block;
+    position: relative; 
+    top: -0.7em;  
+    font-size: $fos-h2;
+    padding: 0 0.25em;
+    background: white;
+}
+
+/* --------------------------------------------------
+Button
+-------------------------------------------------- */
+.btnStyle {
+    box-shadow: 0;
+    @include fos(14);
+}
+
+// input on the p
+input {
+    width: 100%;
+    @include hei(32);
+    @include padding(2,2,2,2);
+    box-shadow: none;
+    border-radius: 0;
+}

@@ -1,0 +1,171 @@
+@charset "utf-8";
+// /* extend */
+// /*
+// incfos : font-size
+// incmag : margin(x, x, x, x)
+// incpad : padding(x, x, x, x)
+// */
+// font-size
+// width : height
+// margin
+// padding
+// max-width max-height min-width min-height
+// position
+// column
+// MediaQuery :Brake point
+$disPc : 1024;
+$disSp : 640;
+// /* --------------------------------------------------
+// Compass
+// -------------------------------------------------- */
+
+
+// /* --------------------------------------------------
+// font-size
+// -------------------------------------------------- */
+@mixin fos($size) {
+	font-size: $size + px;
+	font-size: ($size / 16) * 1 + rem;
+}
+
+// /* --------------------------------------------------
+// width : height
+// -------------------------------------------------- */
+@mixin wid($widthSize) {
+	width: $widthSize + px;
+	width: ($widthSize / 16) * 1 + rem;
+}
+
+@mixin hei($heightSize) {
+	height: $heightSize + px;
+	height: ($heightSize / 16) * 1 + rem;
+}
+
+// /* --------------------------------------------------
+// margin
+// -------------------------------------------------- */
+@mixin margin($mt,$mr,$ml,$mb) {
+	margin: if($mt == 0, 0, $mt + px) if($mr == 0, 0, $mr + px) if($ml == 0, 0, $ml + px) if($mb == 0, 0, $mb + px);
+	margin: if($mt == 0, 0, ($mt / 16 ) + rem) if($mr == 0, 0, ($mr / 16 )  + rem) if($ml == 0, 0, ($ml / 16 )  + rem) if($mb == 0, 0, ($mb / 16 )  + rem);
+}
+@mixin mar($marSize) {
+	margin-right: $marSize + px ; margin-right: ( $marSize / 16) + rem;
+}
+@mixin mal($marSize) {
+	margin-left: $marSize + px ; margin-left: ( $marSize / 16) + rem;
+}
+@mixin mab($marSize) {
+	margin-bottom: $marSize + px ; margin-bottom: ( $marSize / 16) + rem;
+}
+@mixin marSide($marSize) {
+	margin-right: $marSize + px ; margin-right: ( $marSize / 16) + rem;
+	margin-left: $marSize + px ; margin-left: ( $marSize / 16) + rem;
+}
+
+// /* --------------------------------------------------
+// padding
+// -------------------------------------------------- */
+@mixin padding($pt,$pr,$pl,$pb) {
+	padding: if($pt == 0, 0, $pt + px) if($pr == 0, 0, $pr + px) if($pl == 0, 0, $pl + px) if($pb == 0, 0, $pb + px);
+	padding: if($pt == 0, 0, ($pt / 16 ) + rem) if($pr == 0, 0, ($pr / 16 )  + rem) if($pl == 0, 0, ($pl / 16 )  + rem) if($pb == 0, 0, ($pb / 16 )  + rem);
+}
+@mixin pad($size) {
+	padding: $size + px;
+	padding: $size / 16 +rem;
+}
+@mixin pat($padSize) {
+	padding-top: $padSize + px ; padding-top: ( $padSize / 16) + rem;
+}
+@mixin par($padSize) {
+	padding-right: $padSize + px ; padding-right: ( $padSize / 16) + rem;
+}
+@mixin pal($padSize) {
+	padding-left: $padSize + px ; padding-left: ( $padSize / 16) + rem;
+}
+@mixin pab($padSize) {
+	padding-bottom: $padSize + px ; padding-bottom: ( $padSize / 16) + rem;
+}
+
+
+// /* --------------------------------------------------
+// max-width max-height min-width min-height
+// -------------------------------------------------- */
+@mixin maxw($size) {
+	max-width: $size + px;
+	max-width: $size / 16 + rem;
+}
+@mixin maxh($size) {
+	max-height: $size + px;
+	max-height: $size / 16 + rem;
+}
+@mixin minw($size) {
+	min-width: $size + px;
+	min-width: $size / 16 + rem;
+}
+@mixin minh($size) {
+	min-height: $size + px;
+	min-height: $size / 16 + rem;
+}
+// /* --------------------------------------------------
+// Position
+// -------------------------------------------------- */
+@mixin top($size) {
+	top: $size + px;
+	top: $size / 16 + rem;
+}
+@mixin right($size) {
+	right: $size + px;
+	right: $size / 16 + rem;
+}
+@mixin bottom($size) {
+	left: $size + px;
+	left: $size / 16 + rem;
+}
+@mixin left($size) {
+	left: $size + px;
+	left: $size / 16 + rem;
+}
+// /* --------------------------------------------------
+// Column
+// -------------------------------------------------- */
+@mixin columnRow {
+	margin: 0;
+	display:flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+@mixin columnCol {
+	margin: 0;
+	display:flex;
+	flex-direction: column;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+// /* --------------------------------------------------
+// MediaQuery
+// -------------------------------------------------- */
+@mixin mque($disSize) {
+	@if $disSize == pc {
+		@media all and (min-width: $disSp + px) {
+			@content;
+		}
+	}
+	@else if $disSize == over {
+		@media all and (min-width: $disPc + px) {
+			@content;
+		}
+	}
+}
+
+// /* --------------------------------------------------
+// Common
+// -------------------------------------------------- */
+
+
+
+

@@ -1,0 +1,16 @@
+# Comment
+# Folders
+*/node_modules/
+*/designData/
+*/img/
+*/images/
+
+# Rule out files
+// images
+*.DS_Store
+*.psd
+*.ai
+*.jpeg
+*.jpg
+*.png
+*.gif

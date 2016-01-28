@@ -1,0 +1,2095 @@
+@charset "UTF-8";
+/*
+Theme Name: 野口さんのテーマ
+Theme URL: http://noguchicut.net
+Description: Cut in NOGUCHI & Is Hair Worksの公式サイト
+Author: dwp.shohei
+Version: 1.1
+Tags: Cut in NOGUCTI , Is Hair Works
+*/
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
+/* import Default */
+/*
+Default Style Sheet : Version : 1.0
+GitHub : https://github.com/shoheiworks/StyleSheet_Dafault.git
+-------------------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+caption, th {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before, q:after {
+  content: '';
+}
+
+abbr, acronym {
+  border: 0;
+}
+
+/*
+	abbr,acronym{font-variant:normal;}
+	sup{vertical-align:text-top;}
+	sub{vertical-align:text-bottom;}
+	input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+	input,textarea,select{*font-size:100%;}
+	legend{color:#000;}
+*/
+h1, h2, h3, h4, h5, h6, img {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #FFF;
+}
+
+/* html5 */
+article, aside, canvas, details, figcaption, figure,
+header, footer, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* Default
+-------------------------------------------------- */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+caption, th {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before, q:after {
+  content: '';
+}
+
+abbr, acronym {
+  border: 0;
+}
+
+/*
+	abbr,acronym{font-variant:normal;}
+	sup{vertical-align:text-top;}
+	sub{vertical-align:text-bottom;}
+	input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+	input,textarea,select{*font-size:100%;}
+	legend{color:#000;}
+*/
+h1, h2, h3, h4, h5, h6, img {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #FFF;
+}
+
+/* html5
+-------------------------------------------------- */
+article, aside, canvas, details, figcaption, figure,
+header, footer, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* common
+-------------------------------------------------- */
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.cll {
+  clear: left;
+}
+
+.clr {
+  clear: right;
+}
+
+.clboth {
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+img {
+  float: none;
+}
+
+.border {
+  border: #333 1px;
+}
+
+.innerlink {
+  font-size: 77%;
+}
+
+.outlink {
+  font-size: 77%;
+  margin-right: 3px;
+  padding-right: 22px;
+  background: url(images/outlink.png) no-repeat 100%;
+}
+
+.dispnone {
+  display: none;
+}
+
+.col_o {
+  color: #FF7820;
+}
+
+.col_b {
+  color: #1C83DE;
+}
+
+.col_p {
+  color: #F96480;
+}
+
+/* Font Setting
+-------------------------------------------------- */
+/* google web font */
+/* sample : { font-family: 'Open Sans', sans-serif; font-weight: 400; 300 or 400 or 700 } -- */
+body {
+  font-family: "メイリオ","Hiragino角ゴ Pro W3","Hiragino Kaku Gothic Pro", Osaka,"ＭＳ Ｐゴシック","MS PGothic",Arial,Helvetica,Vardana,sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+p {
+  font-size: 12px;
+  line-height: 1.13;
+  color: #4C4C4C;
+}
+
+li {
+  font-size: 96%;
+  line-height: 1.75;
+}
+
+h1 {
+  font-size: 197%;
+}
+
+h2 {
+  font-size: 146.5%;
+}
+
+h3 {
+  font-size: 116%;
+}
+
+h4 {
+  font-size: 100%;
+}
+
+h5 {
+  font-size: 85%;
+}
+
+h6 {
+  font-size: 70%;
+}
+
+.fontArial {
+  font-family: "Arial","Helvetica","メイリオ","Hiragino角ゴ Pro W3","Hiragino Kaku Gothic Pro", Osaka,"ＭＳ Ｐゴシック","MS PGothic",Vardana,sans-serif;
+}
+
+/* +Style
+-------------------------------------------------- */
+.hrMain {
+  margin: 10px 0 26px 0;
+}
+
+/* Link
+-------------------------------------------------- */
+a:link, a:visited, a:hover, a:active {
+  color: #00CCFF;
+  text-decoration: underline;
+}
+
+a:hover, a:active {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------
+Style
+-------------------------------------------------- */
+html {
+  margin: 0;
+  width: 100%;
+}
+
+body {
+  width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  margin: 0;
+}
+
+#indexHeader {
+  width: 980px;
+  height: 98px;
+  padding: 0 24px 30px 20px;
+  background: url(images/index.jpg) 0 0 no-repeat;
+}
+
+#contentsHeader {
+  width: 776px;
+  height: 120px;
+  padding: 0 4px 0 0;
+  float: right;
+  background: url(images/common.jpg) -10px -1200px repeat-x;
+  overflow: hidden;
+}
+
+/* footer */
+footer {
+  width: 1024px;
+  margin: 0;
+  padding: 20px 0 20px 0;
+  float: right;
+  position: relative;
+  background: url(images/footerTopbar.jpg) top right no-repeat, url(images/footerBottombar.jpg) bottom no-repeat;
+}
+
+footer span {
+  display: none;
+}
+
+footer a:hover, footer a:active {
+  font-weight: normal;
+  text-decoration: none;
+}
+
+#footerBgimg {
+  width: 170px;
+  height: 220px;
+  float: left;
+  background: url(images/index.jpg) 0 -770px no-repeat;
+  margin: -60px 0 0 0;
+}
+
+#backToTop {
+  width: 46px;
+  height: 64px;
+  background: url(images/common.jpg) -220px -120px;
+  position: absolute;
+  top: -36px;
+  right: 58px;
+}
+
+#backToTop {
+  cursor: pointer;
+}
+
+#backToTop:hover {
+  margin: -2px 0 0 0;
+}
+
+#footerInfo {
+  margin: 0 0 0 100px;
+  float: left;
+}
+
+#footerMail {
+  margin: 30px 0 20px 18px;
+  font-size: 85%;
+}
+
+#footerOpen {
+  margin: 0 0 0 18px;
+}
+
+#footerOpen p {
+  margin: 0 0 0 8px;
+  font-size: 85%;
+  line-height: 1.4;
+}
+
+#footerNav01 {
+  width: 140px;
+  min-height: 250px;
+  margin: 20px 0 0 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  float: left;
+  border-left: solid 2px #999;
+}
+
+#footerNav01 li {
+  height: 30px;
+  margin: 0 0 8px 0;
+}
+
+#footerNav01 a {
+  margin: 0 0 0 8px;
+  padding: 0 0 0 18px;
+  font-size: 131%;
+  color: #333;
+  text-decoration: none;
+}
+
+#footerNav01 a:hover {
+  background: url(images/common.jpg) -204px -6px no-repeat;
+}
+
+#footerNav02 {
+  width: 180px;
+  min-height: 250px;
+  margin: 20px 0 0 0;
+  padding: 7px 0 0 0;
+  float: left;
+  border-left: dotted 1px;
+}
+
+#footerNav02 li {
+  margin: 0 4px 10px 12px;
+  padding: 0 0 0 16px;
+}
+
+#footerNav02 li:hover {
+  background: url(images/common.jpg) -206px -10px no-repeat;
+}
+
+#footerNav02 a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.menu-item {
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+#footerSnsLink {
+  margin: 20px 0 0 6px;
+  width: 128px;
+  float: left;
+}
+
+#footerSnsLink li {
+  margin: 0 0 6px 0;
+}
+
+#footerSnsLink a {
+  width: 128px;
+  margin: 0 0 6px 0;
+  display: block;
+}
+
+#footerSnsLink #LinkFBcutinnoguchi a {
+  background: url(images/common.jpg) -10px -116px no-repeat;
+  height: 68px;
+}
+
+#footerSnsLink #LinkFBishairworks a {
+  background: url(images/common.jpg) -10px -186px no-repeat;
+  height: 68px;
+}
+
+#footerSnsLink #LinkFBkoharubiyori a {
+  background: url(images/common.jpg) -10px -256px no-repeat;
+  height: 68px;
+}
+
+#footerSnsLink #LinkAmeba a {
+  background: url(images/common.jpg) -10px -326px no-repeat;
+  height: 58px;
+}
+
+#footerSnsLink a:hover {
+  margin: -2px 0 8px 0;
+}
+
+#LinkFBkoharubiyori {
+  display: none;
+}
+
+#CR {
+  float: right;
+  position: relative;
+  padding: 6px 8px 0 0;
+}
+
+/* common style
+--------------------------------------------------*/
+#salonlist {
+  width: 260px;
+  height: 96px;
+  background: url(images/index.jpg);
+  background-position: -10px -136px;
+}
+
+#salonlist p {
+  font-size: 150%;
+}
+
+#salonlist p {
+  display: none;
+}
+
+#salonlist li {
+  height: 20px;
+  font-size: 110%;
+}
+
+.salonlist_Cutinnoguchi {
+  margin: 0 0 10px 0;
+  padding: 0 0 0 20px;
+  background: url(images/common.png) -10px -10px no-repeat;
+}
+
+.salonlist_Ishairworks {
+  padding: 0 0 0 20px;
+  background: url(images/common.png) -10px -40px no-repeat;
+}
+
+.salonlist_Cutinnoguchi address {
+  margin: 20px;
+}
+
+.salonlist_Ishairworks address {
+  margin: 0 0 0 20px;
+}
+
+/*--------------------------------------------------
+Index style
+-------------------------------------------------- */
+/* Header */
+#index_header_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(images/index.jpg) top left no-repeat;
+  z-index: 50;
+}
+
+header #index_salonlist {
+  margin: 0;
+  float: right;
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+/* index Box */
+#indexContentsbox {
+  width: 526px;
+  margin: 8px 24px 0 0;
+  float: right;
+}
+
+/* NAV
+-------------------------------------------------- */
+/* index salon NAV */
+#index_salonNav {
+  width: 162px;
+  margin: 0 60px 0 20px;
+  padding: 0;
+  float: left;
+}
+
+#index_salonNav a {
+  background: url(images/index.jpg);
+  display: block;
+  width: 162px;
+  height: 152px;
+  margin: 0 0 80px 0;
+  padding: 0;
+}
+
+#index_salonNav span, #index_gNav span, #contents_gNav span {
+  display: none;
+}
+
+#index_salonNav #navCutinnoguchi a:link,
+#index_salonNav #navCutinnoguchi a:visited {
+  background-position: -10px -280px;
+}
+
+#index_salonNav #navCutincoguchi a:hover,
+#index_salonNav #navCutincoguchi a:active {
+  background-position: -160px 0;
+}
+
+#index_salonNav #navIshairworks a:link,
+#index_salonNav #navIshairworks a:visited {
+  background-position: -10px -440px;
+}
+
+#index_salonNav #navIshairworks a:hover,
+#index_salonNav #navIshairworks a:active {
+  background-position: -10px -440px;
+}
+
+/* index gNav */
+#index_gNav {
+  width: 150px;
+  margin: 0 50px 0 0;
+  padding: 0;
+  float: left;
+}
+
+#index_gNav a {
+  background: url(images/nav.jpg);
+  display: block;
+  width: 150px;
+  height: 60px;
+  padding: 0;
+}
+
+#index_gNav #indexNavSalon a:link,
+#index_gNav #indexNavSalon a:visited {
+  background-position: -10px -10px;
+}
+
+#index_gNav #indexNavSalon a:hover,
+#index_gNav #indexNavSalon a:active {
+  background-position: -200px -10px;
+}
+
+#index_gNav #indexNavConcept a:link,
+#index_gNav #indexNavConcept a:visited {
+  background-position: -10px -80px;
+}
+
+#index_gNav #indexNavConcept a:hover,
+#index_gNav #indexNavConcept a:active {
+  background-position: -200px -80px;
+}
+
+#index_gNav #indexNavMenu a:link,
+#index_gNav #indexNavMenu a:visited {
+  background-position: -10px -150px;
+}
+
+#index_gNav #indexNavMenu a:hover,
+#index_gNav #indexNavMenu a:active {
+  background-position: -200px -150px;
+}
+
+#index_gNav #indexNavStaff a:link,
+#index_gNav #indexNavStaff a:visited {
+  background-position: -10px -220px;
+}
+
+#index_gNav #indexNavStaff a:hover,
+#index_gNav #indexNavStaff a:active {
+  background-position: -200px -220px;
+}
+
+#index_gNav #indexNavNews a:link,
+#index_gNav #indexNavNews a:visited {
+  background-position: -10px -290px;
+}
+
+#index_gNav #indexNavNews a:hover,
+#index_gNav #indexNavNews a:active {
+  background-position: -200px -290px;
+}
+
+/* Promotion Area */
+#index_promo {
+  width: 520px;
+  height: 350px;
+  margin: 0 0 30px 0;
+  overflow: hidden;
+}
+
+/* Facebook Like Button*/
+.fb_iframe_widget {
+  margin: 0 0 20px 2px;
+}
+
+/* News Box */
+#index_news {
+  width: 520px;
+  min-height: 420px;
+  margin: 0 0 12px 3px;
+  padding: 0 0 100px 0;
+}
+
+#index_news h1 {
+  background: url(images/index.jpg) -10px -600px no-repeat;
+  width: 520px;
+  height: 25px;
+  margin: 0 0 20px 0;
+  display: block;
+}
+
+#index_news h1 span {
+  display: none;
+}
+
+.newsBox {
+  background: url(images/index.jpg) -10px -630px no-repeat;
+  margin: 0 0 12px 0;
+  width: 520px;
+  height: 117px;
+  overflow: hidden;
+}
+
+.newsBox .newsBoxDate {
+  width: 460px;
+  margin: 12px 28px 0 12px;
+}
+
+.newsBox h3 {
+  width: 460px;
+  max-height: 32px;
+  margin: 0 28px 0 12px;
+  color: #00CCFF;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.newsBox a {
+  text-decoration: none;
+}
+
+.newsBox h3:hover {
+  font-weight: bold;
+}
+
+.newsBox .postBox {
+  height: 44px;
+  overflow: hidden;
+}
+
+.newsBox p {
+  width: 460px;
+  margin: 0 28px 2px 24px;
+  line-height: 1.8;
+}
+
+#newsBgimg {
+  width: 1018px;
+  height: 343px;
+  display: block;
+  background: #F6F6F4;
+  padding: 0 0 0 58%;
+  position: absolute;
+  top: 686px;
+  left: -50%;
+  visibility: visible;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#newsBgimg span {
+  display: none;
+}
+
+/* --------------------------------------------------
+Contents
+-------------------------------------------------- */
+/* gNav */
+#contents_gNav {
+  width: 210px;
+  height: 550px;
+  display: block;
+  padding: 160px 0 0 30px;
+  float: left;
+  background: url(images/common.jpg) -760px -460px no-repeat;
+}
+
+#contents_gNav a {
+  background: url(images/nav.jpg);
+  display: block;
+  width: 150px;
+  height: 76px;
+  padding: 0;
+}
+
+#contents_gNav #contentsNavHome a:link,
+#contents_gNav #contentsNavHome a:visited {
+  background-position: -10px -380px;
+}
+
+#contents_gNav #contentsNavHome a:hover,
+#contents_gNav #contentsNavHome a:active {
+  background-position: -200px -380px;
+}
+
+#contents_gNav #contentsNavSalon a:link,
+#contents_gNav #contentsNavSalon a:visited {
+  background-position: -10px -460px;
+}
+
+#contents_gNav #contentsNavSalon a:hover,
+#contents_gNav #contentsNavSalon a:active {
+  background-position: -200px -460px;
+}
+
+#contents_gNav #contentsNavConcept a:link,
+#contents_gNav #contentsNavConcept a:visited {
+  background-position: -10px -540px;
+}
+
+#contents_gNav #contentsNavConcept a:hover,
+#contents_gNav #contentsNavConcept a:active {
+  background-position: -200px -540px;
+}
+
+#contents_gNav #contentsNavMenu a:link,
+#contents_gNav #contentsNavMenu a:visited {
+  background-position: -10px -620px;
+}
+
+#contents_gNav #contentsNavMenu a:hover,
+#contents_gNav #contentsNavMenu a:active {
+  background-position: -200px -620px;
+}
+
+#contents_gNav #contentsNavStaff a:link,
+#contents_gNav #contentsNavStaff a:visited {
+  background-position: -10px -700px;
+}
+
+#contents_gNav #contentsNavStaff a:hover,
+#contents_gNav #contentsNavStaff a:active {
+  background-position: -200px -700px;
+}
+
+#contents_gNav #contentsNavNews a:link,
+#contents_gNav #contentsNavNews a:visited {
+  background-position: -10px -780px;
+}
+
+#contents_gNav #contentsNavNews a:hover,
+#contents_gNav #contentsNavNews a:active {
+  background-position: -200px -780px;
+}
+
+/* Header */
+header #contents_salonlist {
+  float: right;
+}
+
+#contents_salonlist #salonlist {
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+#headerOpen {
+  width: 200px;
+  height: 96px;
+  background: url(images/common.jpg);
+  background-position: -290px -1011px;
+  float: right;
+}
+
+#headerOpen p {
+  display: none;
+}
+
+/* --------------------------------------------------
+Contents Start
+-------------------------------------------------- */
+/* COMMON
+-------------------------------------------------- */
+.contentsBox {
+  min-height: 600px;
+  margin: 0;
+  padding: 82px 0 0 160px;
+  float: left;
+}
+
+.freeBox {
+  min-height: 600px;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.contentsBox h1, #contactUs h1 {
+  width: 620px;
+  height: 62px;
+  margin: 0 0 80px 0;
+  overflow: hidden;
+}
+
+.contentsBox h1 span {
+  display: none;
+}
+
+/* SALON
+-------------------------------------------------- */
+#salon h1 {
+  background: url("images/common.jpg") no-repeat -10px -500px;
+}
+
+.salonBox {
+  width: 600px;
+  height: 204px;
+  margin: 0px 0px 110px 20px;
+}
+
+.salonBox img {
+  border: currentColor;
+  width: 130px;
+  height: 200px;
+  margin: 0 20px 0 0;
+  overflow: hidden;
+  float: right;
+  border: solid 1px #999;
+}
+
+.salonBox address {
+  margin: 20px 0 0 0;
+  float: left;
+}
+
+.salonBox h2 {
+  width: 360px;
+  margin: 0px 0px 8px;
+  font-size: 150%;
+}
+
+.salonBox h2 span {
+  font-size: 67%;
+  margin: 10px;
+}
+
+.salonBox h3 {
+  width: 360px;
+  margin: 0px 0px 8px;
+  font-size: 146%;
+}
+
+.salonBox h4 {
+  line-height: 1.1;
+  margin: 0 0 0 1px;
+}
+
+.salonBox p, .salonBox a {
+  margin: 0px 0px 8px 10px;
+  font-size: 85%;
+}
+
+.salonBox a {
+  text-decoration: underline;
+  color: #00CCFF;
+}
+
+.salonBox a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* CONSEPT
+-------------------------------------------------- */
+#concept h1 {
+  background: url("images/common.jpg") no-repeat -10px -570px;
+}
+
+#concept {
+  margin: 0 0 80px 0;
+}
+
+#conceptBox {
+  width: 600px;
+  margin: 0 0 30px 18px;
+  overflow: hidden;
+}
+
+#conceptBox h3 {
+  margin: 0 0 24px 0;
+  font-size: 116%;
+}
+
+#conceptBox p {
+  font-size: 108%;
+  line-height: 1.42;
+  margin: 0 0 16px 6px;
+}
+
+#conceptImgbox {
+  width: 600px;
+  margin: 0 0 30px 18px;
+  overflow: hidden;
+}
+
+/* MENU
+-------------------------------------------------- */
+#menu h1 {
+  background: url("images/common.jpg") -10px -640px no-repeat;
+}
+
+.menuBox {
+  width: 430px;
+  margin: 0 0 80px 20px;
+  float: left;
+}
+
+.menuBox table {
+  font-family: "Arial","Helvetica","メイリオ","Hiragino角ゴ Pro W3","Hiragino Kaku Gothic Pro", Osaka,"ＭＳ Ｐゴシック","MS PGothic",Vardana,sans-serif;
+  margin: 0 0 10px 0;
+}
+
+.menuBox ul {
+  margin: 0 0 0 30px;
+}
+
+.menuBox li {
+  list-style: square;
+}
+
+.menuBox table td {
+  height: 36px;
+}
+
+.menuBox dt {
+  width: 6em;
+  float: left;
+}
+
+.menuBox dd {
+  padding: 0 0 0 6em;
+}
+
+#menuImgBox {
+  width: 122px;
+  float: right;
+}
+
+#menuImgBox img {
+  margin: 0 0 30px 0;
+  border: 1px solid #999;
+}
+
+/* STAFF
+-------------------------------------------------- */
+#staff h1 {
+  background: url("images/common.jpg") -10px -710px no-repeat;
+}
+
+.staffBox {
+  margin: 0 0 40px 20px;
+  width: 600px;
+  height: 260px;
+  position: relative;
+}
+
+.staffBox .staffImgBox {
+  display: block;
+  border: solid 2px #999;
+  width: 120px;
+  height: 130px;
+  overflow: hidden;
+  float: left;
+}
+
+.staffBox img {
+  margin: 0;
+}
+
+.staffBox h2 {
+  width: 210px;
+  font-size: 150%;
+  position: absolute;
+  top: 0;
+  left: 190px;
+}
+
+.staffBox .staffName {
+  position: absolute;
+  top: 40px;
+  left: 194px;
+  font-size: 116%;
+}
+
+.staffBox dl {
+  width: 400px;
+  height: 100%;
+  position: absolute;
+  top: 74px;
+  left: 192px;
+}
+
+.staffBox dt {
+  margin: 0px 0px 0px 4px;
+  width: 6.2em;
+  font-size: 96%;
+  float: left;
+}
+
+.staffBox dd {
+  margin: 0 0 2px 0;
+  padding: 0px 0px 0px 6.2em;
+  font-size: 96%;
+}
+
+.staffBox dl .yakushoku {
+  position: relative;
+  top: 6px;
+  left: 4px;
+  font-size: 96%;
+  margin: 0 0 12px 0;
+}
+
+.staffBox dl .hitokoto {
+  position: relative;
+  top: 6px;
+  left: 4px;
+}
+
+.staffBox dl .hitokoto p {
+  font-size: 96%;
+}
+
+.staffBox a {
+  position: relative;
+  top: 10px;
+  left: 4px;
+}
+
+/* Img PopUp */
+.staffBox .imgUpBox01 {
+  width: 124px;
+  height: 134px;
+  padding: 0 20px 20px 0;
+  display: block;
+  overflow: hidden;
+}
+
+.staffBox .imgUpBox02 {
+  width: 124px;
+  height: 134px;
+  padding: 0 20px 20px 0;
+  display: block;
+}
+
+.staffBox .imgUpBox03 {
+  width: 124px;
+  height: 134px;
+  padding: 0 20px 20px 0;
+  display: block;
+}
+
+.staffBox .imgUpBox04 {
+  width: 124px;
+  height: 134px;
+  padding: 0 20px 20px 0;
+  display: block;
+}
+
+.staffPopup01 {
+  width: 138px;
+  height: 158px;
+  border: solid 2px #333;
+  display: block;
+  position: relative;
+  top: -144px;
+  left: 8px;
+  z-index: 1000;
+}
+
+.staffPopup02 {
+  width: 138px;
+  height: 158px;
+  border: solid 2px #333;
+  display: block;
+  position: relative;
+  top: -144px;
+  left: 8px;
+  z-index: 1000;
+}
+
+.staffPopup03 {
+  width: 138px;
+  height: 158px;
+  border: solid 2px #333;
+  display: block;
+  position: relative;
+  top: -144px;
+  left: 8px;
+  z-index: 1000;
+}
+
+.staffPopup04 {
+  width: 138px;
+  height: 158px;
+  border: solid 2px #333;
+  display: block;
+  position: relative;
+  top: -144px;
+  left: 8px;
+  z-index: 1000;
+}
+
+/* NEWS
+-------------------------------------------------- */
+#news h1 {
+  background: url("images/common.jpg") no-repeat -10px -780px;
+}
+
+#news ul {
+  margin: 0 0 0 70px;
+}
+
+#news {
+  margin: 0 0 60px 0;
+}
+
+/* Contact Us
+-------------------------------------------------- */
+#contactUs {
+  margin: 0 0 80px 0;
+  padding: 82px 0 0 160px;
+  float: left;
+}
+
+#contactUs section {
+  margin: 0 0 40px 20px;
+}
+
+#contactUs h1 {
+  background: url("images/common.jpg") no-repeat -10px -850px;
+}
+
+#contactUs span {
+  display: none;
+}
+
+#contactUs h3 {
+  font-size: 134%;
+  margin: 0 0 10px 0;
+}
+
+#contactUs p {
+  margin: 0 0 8px 10px;
+}
+
+#contactUs address {
+  margin: 0 0 8px 10px;
+  font-size: 123%;
+  font-weight: bold;
+}
+
+/* page + single
+-------------------------------------------------- */
+.fixedBox p, .singleBox p {
+  font-size: 93%;
+  line-height: 1.6;
+}
+
+/* page.php
+-------------------------------------------------- */
+#fixed {
+  margin: 0;
+  padding: 52px 0 40px 130px;
+  float: left;
+}
+
+#fixed h1 {
+  width: 580px;
+  margin: 0 0 40px 0;
+  padding: 6px 12px 6px 2px;
+  border-bottom: solid 1px #333;
+  font-size: 146%;
+  color: #4C4C4C;
+  overflow: hidden;
+}
+
+.fixedBox {
+  width: 600px;
+  margin: 0 20px 80px 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* single
+-------------------------------------------------- */
+#single {
+  margin: 0;
+  padding: 52px 0 40px 130px;
+  float: left;
+}
+
+#single h1 {
+  width: 580px;
+  margin: 0 0 30px 18px;
+  padding: 6px 12px 6px 2px;
+  border-bottom: solid 1px #333;
+  font-size: 138.5%;
+  font-weight: bold;
+  color: #4C4C4C;
+  /*	background: url("images/common.jpg") -10px -930px no-repeat; */
+  overflow: hidden;
+}
+
+/* singleBox */
+.singleBox {
+  width: 580px;
+  margin: 0 0 80px 20px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.singleBox time {
+  display: block;
+  font-size: 86%;
+  margin: 0 0 4% 86%;
+}
+
+.singleBox img {
+  max-width: 100%;
+}
+
+/* single NAV , archive NAV
+-------------------------------------------------- */
+.singleNav {
+  width: 380px;
+  height: 30px;
+  padding: 0 0 0 100px;
+}
+
+.singleNav span, .archiveNav span {
+  display: none;
+}
+
+.singleNav a, .archiveNav a {
+  display: block;
+  width: 62px;
+  height: 30px;
+}
+
+.singleNavPrev a {
+  background: url("images/common.jpg") -10px -1330px no-repeat;
+  float: left;
+}
+
+.singleNavPrev a:hover {
+  background: url("images/common.jpg") -80px -1330px no-repeat;
+}
+
+.singleNavNext a {
+  background: url("images/common.jpg") -10px -1370px no-repeat;
+  float: right;
+}
+
+.singleNavNext a:hover {
+  background: url("images/common.jpg") -80px -1370px no-repeat;
+}
+
+/* archive NAV
+-------------------------------------------------- */
+.archiveNav {
+  width: 480px;
+  height: 30px;
+  padding: 0 0 0 30px;
+}
+
+/* 404
+-------------------------------------------------- */
+#e404 h1 {
+  margin: 0 0 20px 0;
+}
+
+#e404 h3 {
+  margin: 0 0 10px 0;
+}
+
+#e404 p {
+  font-size: 108%;
+}
+
+/* --------------------------------------------------
+kokomade
+-------------------------------------------------- */
+/* --------------------------------------------------
+iview -- index.php
+-------------------------------------------------- */
+#iview {
+  display: block;
+  width: 520px;
+  height: 350px;
+  background: #fff;
+  position: relative;
+}
+
+#iview .iviewSlider {
+  display: block;
+  width: 520px;
+  height: 350px;
+  overflow: hidden;
+}
+
+.iview-controlNav {
+  position: absolute;
+  width: 500px;
+  top: 312px;
+  left: 10px;
+  height: 32px;
+}
+
+.iview-controlNav a.iview-controlPrevNav {
+  width: 34px;
+  height: 32px;
+  float: left;
+  background: url(images/gif.png) -10px -10px no-repeat;
+  z-index: 9;
+}
+
+.iview-controlNav a.iview-controlNextNav {
+  width: 34px;
+  height: 32px;
+  float: right;
+  background: url(images/gif.png) -10px -50px no-repeat;
+  z-index: 9;
+}
+
+.iview-controlNav a {
+  text-indent: -9999px;
+  z-index: 9;
+  cursor: pointer;
+}
+
+.iview-controlNav a.iview-control.active {
+  background-position: 0px -12px;
+}
+
+.iview-controlNav div.iview-items {
+  display: none;
+  padding: 0px 10px 0px 10px;
+  height: 44px;
+}
+
+.iview-caption {
+  background: url("../../img/caption-bg.png");
+  color: #FFF;
+  border-radius: 3px;
+  padding: 10px 15px;
+  font-family: Verdana;
+  font-size: 12px;
+  text-shadow: #000 1px 1px 0px;
+}
+
+.iview-caption.caption1 {
+  font-size: 36px;
+  font-weight: bold;
+  height: 45px;
+}
+
+.iview-caption.caption5 {
+  background: #c4302b;
+  box-shadow: rgba(0, 0, 0, 0.7) 10px 10px 15px 0px;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+.iview-caption.caption6 {
+  font-size: 18px;
+}
+
+.iview-caption.caption7 {
+  text-align: left;
+  font-size: 11px;
+  color: #888;
+  border-radius: 0px;
+}
+
+.iview-caption.caption7 div {
+  line-height: 200%;
+}
+
+.iview-caption.caption7 h3 {
+  margin-bottom: 20px;
+  color: #FFF;
+}
+
+.iview-caption.blackcaption {
+  background: #000;
+  box-shadow: rgba(0, 0, 0, 0.7) 10px 10px 15px 0px;
+  text-shadow: none;
+}
+
+#iview-preloader {
+  border: #666 1px solid;
+  width: 150px;
+}
+
+#iview-preloader div {
+  background: #666;
+}
+
+.iview-controlNav div.iview-items ul li {
+  padding: 0px;
+  float: left;
+  width: 11px;
+  height: 12px;
+  margin: 3px;
+  margin-top: 16px;
+  line-height: 0px;
+}
+
+#iview #iview-tooltip {
+  display: none;
+  position: absolute;
+  background: url("../../img/tooltip.png") no-repeat;
+  width: 124px;
+  height: 90px;
+  bottom: 30px;
+  left: -67px;
+  padding: 10px;
+  z-index: 100;
+}
+
+#iview #iview-tooltip div.holder {
+  display: block;
+  width: 124px;
+  height: 84px;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+#iview #iview-tooltip div.holder div.container {
+  display: block;
+  width: 4000px;
+}
+
+#iview #iview-tooltip div.holder div.container div {
+  float: left;
+  display: block;
+  overflow: hidden;
+  width: 124px;
+  height: 84px;
+  left: -50%;
+  text-align: center;
+}
+
+#iview #iview-tooltip div.holder div.container div img {
+  height: 84px;
+  margin: 0 auto;
+}
+
+/* kokomade copy*/
+/*
+	.iview-items { display: none;}
+	#iview-timer { display: block;}
+*/
+/* --------------------------------------------------
+Maps
+-------------------------------------------------- */
+* html div #glayLayer {
+  position: absolute;
+}
+
+#baseLayer {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  filter: alpha(opacity=85);
+  opacity: 0.65;
+  z-index: 520;
+}
+
+#overLayer {
+  display: none;
+  width: 860px;
+  height: 420px;
+  padding: 70px 20px;
+  overflow: auto;
+  background: white;
+  position: fixed;
+  top: 3%;
+  left: 50%;
+  z-index: 620;
+  border: 5px solid #333;
+}
+
+/* maps
+-------------------------------------------------- */
+#mapsInformation {
+  float: left;
+}
+
+#mapsInformation h1 {
+  width: 300px;
+  height: 100px;
+  margin: 0 0 8px 0;
+}
+
+#mapsInformation h1 span {
+  display: none;
+}
+
+#mapsInformation #CutinnoguchiMapsImg {
+  background: url(images/common.jpg) -320px -240px no-repeat;
+}
+
+#mapsInformation #IshairworksMapsImg {
+  background: url(images/common.jpg) -320px -120px no-repeat;
+}
+
+#mapsInformation #KoharubiyoriMapsImg {
+  background: url(images/common.jpg) -642px -120px no-repeat;
+}
+
+#mapsInformation address {
+  margin: 0 0 0 4px;
+}
+
+#mapsInformation p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#googleMaps {
+  width: 540px;
+  height: 420px;
+  float: right;
+}
+
+/* --------------------------------------------------
+Commons
+-------------------------------------------------- */
+/* Width */
+.w80 {
+  width: 80px !important;
+}
+
+.w100 {
+  width: 100px !important;
+}
+
+.w150 {
+  width: 150px !important;
+}
+
+.w200 {
+  width: 200px !important;
+}
+
+.w250 {
+  width: 250px !important;
+}
+
+.w300 {
+  width: 300px !important;
+}
+
+.w350 {
+  width: 350px !important;
+}
+
+.w400 {
+  width: 400px !important;
+}
+
+.w450 {
+  width: 450px !important;
+}
+
+.w500 {
+  width: 500px !important;
+}
+
+.w550 {
+  width: 550px !important;
+}
+
+.w600 {
+  width: 600px !important;
+}
+
+.w700 {
+  width: 700px !important;
+}
+
+/* Margin */
+.m0 {
+  margin: 0 !important;
+}
+
+.m5 {
+  margin: 5px !important;
+}
+
+.m10 {
+  margin: 10px !important;
+}
+
+.m15 {
+  margin: 15px !important;
+}
+
+.m20 {
+  margin: 20px !important;
+}
+
+.m25 {
+  margin: 25px !important;
+}
+
+.m30 {
+  margin: 30px !important;
+}
+
+.m40 {
+  margin: 40px !important;
+}
+
+.m50 {
+  margin: 50px !important;
+}
+
+.m60 {
+  margin: 60px !important;
+}
+
+.mr0 {
+  margin-right: 0 !important;
+}
+
+.mr5 {
+  margin-right: 5px !important;
+}
+
+.mr10 {
+  margin-right: 10px !important;
+}
+
+.mr15 {
+  margin-right: 15px !important;
+}
+
+.mr20 {
+  margin-right: 20px !important;
+}
+
+.mr25 {
+  margin-right: 25px !important;
+}
+
+.mr30 {
+  margin-right: 30px !important;
+}
+
+.mr40 {
+  margin-right: 40px !important;
+}
+
+.mr50 {
+  margin-right: 50px !important;
+}
+
+.mr60 {
+  margin-right: 60px !important;
+}
+
+.mb0 {
+  margin-bottom: 0 !important;
+}
+
+.mb5 {
+  margin-bottom: 5px !important;
+}
+
+.mb10 {
+  margin-bottom: 10px !important;
+}
+
+.mb15 {
+  margin-bottom: 15px !important;
+}
+
+.mb20 {
+  margin-bottom: 20px !important;
+}
+
+.mb25 {
+  margin-bottom: 25px !important;
+}
+
+.mb30 {
+  margin-bottom: 30px !important;
+}
+
+.mb40 {
+  margin-bottom: 40px !important;
+}
+
+.mb50 {
+  margin-bottom: 50px !important;
+}
+
+.mb60 {
+  margin-bottom: 60px !important;
+}
+
+.ml0 {
+  margin-left: 0 !important;
+}
+
+.ml5 {
+  margin-left: 5px !important;
+}
+
+.ml10 {
+  margin-left: 10px !important;
+}
+
+.ml15 {
+  margin-left: 15px !important;
+}
+
+.ml20 {
+  margin-left: 20px !important;
+}
+
+.ml25 {
+  margin-left: 25px !important;
+}
+
+.ml30 {
+  margin-left: 30px !important;
+}
+
+.ml40 {
+  margin-left: 40px !important;
+}
+
+.ml50 {
+  margin-left: 50px !important;
+}
+
+.ml60 {
+  margin-left: 60px !important;
+}
+
+/* Padding */
+.p0 {
+  padding: 0 !important;
+}
+
+.p5 {
+  padding: 5px !important;
+}
+
+.p10 {
+  padding: 10px !important;
+}
+
+.p15 {
+  padding: 15px !important;
+}
+
+.p20 {
+  padding: 20px !important;
+}
+
+.p25 {
+  padding: 25px !important;
+}
+
+.p30 {
+  padding: 30px !important;
+}
+
+.p35 {
+  padding: 35px !important;
+}
+
+.p40 {
+  padding: 40px !important;
+}
+
+.p45 {
+  padding: 45px !important;
+}
+
+.p50 {
+  padding: 50px !important;
+}
+
+.pt0 {
+  padding-top: 0 !important;
+}
+
+.pt5 {
+  padding-top: 5px !important;
+}
+
+.pt10 {
+  padding-top: 10px !important;
+}
+
+.pt15 {
+  padding-top: 15px !important;
+}
+
+.pt20 {
+  padding-top: 20px !important;
+}
+
+.pt25 {
+  padding-top: 25px !important;
+}
+
+.pt30 {
+  padding-top: 30px !important;
+}
+
+.pt35 {
+  padding-top: 35px !important;
+}
+
+.pt40 {
+  padding-top: 40px !important;
+}
+
+.pt45 {
+  padding-top: 45px !important;
+}
+
+.pt50 {
+  padding-top: 50px !important;
+}
+
+.pt55 {
+  padding-top: 55px !important;
+}
+
+.pt60 {
+  padding-top: 60px !important;
+}
+
+.pr0 {
+  padding-right: 0 !important;
+}
+
+.pr5 {
+  padding-right: 5px !important;
+}
+
+.pr10 {
+  padding-right: 10px !important;
+}
+
+.pr15 {
+  padding-right: 15px !important;
+}
+
+.pr20 {
+  padding-right: 20px !important;
+}
+
+.pr25 {
+  padding-right: 25px !important;
+}
+
+.pr30 {
+  padding-right: 30px !important;
+}
+
+.pr35 {
+  padding-right: 35px !important;
+}
+
+.pr40 {
+  padding-right: 40px !important;
+}
+
+.pr45 {
+  padding-right: 45px !important;
+}
+
+.pr50 {
+  padding-right: 50px !important;
+}
+
+.pb0 {
+  padding-bottom: 0 !important;
+}
+
+.pb5 {
+  padding-bottom: 5px !important;
+}
+
+.pb10 {
+  padding-bottom: 10px !important;
+}
+
+.pb15 {
+  padding-bottom: 15px !important;
+}
+
+.pb20 {
+  padding-bottom: 20px !important;
+}
+
+.pb25 {
+  padding-bottom: 25px !important;
+}
+
+.pb30 {
+  padding-bottom: 30px !important;
+}
+
+.pb35 {
+  padding-bottom: 35px !important;
+}
+
+.pb40 {
+  padding-bottom: 40px !important;
+}
+
+.pb45 {
+  padding-bottom: 45px !important;
+}
+
+.pb50 {
+  padding-bottom: 50px !important;
+}
+
+.pb55 {
+  padding-bottom: 55px !important;
+}
+
+.pb60 {
+  padding-bottom: 60px !important;
+}
+
+.pl0 {
+  padding-left: 0 !important;
+}
+
+.pl5 {
+  padding-left: 5px !important;
+}
+
+.pl10 {
+  padding-left: 10px !important;
+}
+
+.pl15 {
+  padding-left: 15px !important;
+}
+
+.pl20 {
+  padding-left: 20px !important;
+}
+
+.pl25 {
+  padding-left: 25px !important;
+}
+
+.pl30 {
+  padding-left: 30px !important;
+}
+
+.pl35 {
+  padding-left: 35px !important;
+}
+
+.pl40 {
+  padding-left: 40px !important;
+}
+
+.pl45 {
+  padding-left: 45px !important;
+}
+
+.pl50 {
+  padding-left: 50px !important;
+}
+
+/* Font-size */
+/*
+10px 77
+11px 85
+12px 93 *
+13px 100
+14px 108
+15px 116
+16px 123.1
+17px 131
+18px 138.5
+19px 146.5
+20px 153.9
+21px 161.6
+22px 167
+23px 174
+24px 182
+25px 189
+26px 197
+
+h1 200% 2em     197
+h2 150% 1.5em   146.5
+h3 117% 1.17em  116
+h4 100% 1em     100
+h5 .83% 0.83em  85
+h6 .67% 0.67em  70
+*/

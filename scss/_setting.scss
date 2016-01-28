@@ -1,0 +1,119 @@
+/* --------------------------------------------------
+Setting
+
+Color
+html
+- color
+- font
+- lineheight
+a
+- link
+font
+- other fonts (ex:google)
+-------------------------------------------------- */
+$colHtmlBG: #FFFFFF;
+// $colMain: #5ACADA;
+
+// $colSub01: #0ADDDD; //right
+// $colSub02: #40858F; //dark
+// $colSub03: #FAF359; //yellow
+// $colSub04: #EFEFEF; //white
+
+// $colLink: #00CCFF;
+// $colHover: #00CCFF;
+// $colActive: #00CCFF;
+// $colVisited: #00CCFF;
+// $colForcus: #00CCFF;
+
+// $colInLink: #47CF73;//519dad
+
+// /* Text Color */
+// $colHtmlText: #333333;
+// $colText: #4C4C4C;
+
+// $colPriceL: #000444;
+// $colPriceN: #ff0055;
+
+// $colAtt: #E73656;
+
+// $colBtn01: #00004d;
+// $colBtnCart: #fd0202;
+
+// $base-font-size: 16px;
+// $base-line-height:24px;
+// $rhythm-unit:"rem";
+
+// $fos-h1: 32px; $fos-h2: 24px;
+// $fos-h3: 20px; $fos-h4: 16px;
+// $fos-h5: 14px;
+// $fos-tl: 24; $fos-tm: 16; $fos-ts: 14; $fos-tss: 12;
+// /* fos-PC */
+// $fos-h1p: 38px;
+// $fos-h2p: 32px;
+// $fos-h3p: 24px;
+
+/* Font Setting */
+/* Google Web Font */
+// @import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700);
+
+// // $fontHtml: '游ゴシック', "YuGothic","Yu Gothic", 'Noto Sans Japanese', "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, Helvetica,　"メイリオ", Meiryo, sans-serif;
+// $fontHtml: Meiryo, "メイリオ","Hiragino角ゴ Pro W3","Hiragino Kaku Gothic Pro", 'Noto Sans Japanese', "ＭＳ Ｐゴシック","MS PGothic",Arial,Helvetica,Vardana,sans-serif;
+// .fontArial {
+// 	font-family: "Arial","Helvetica","メイリオ","Hiragino角ゴ Pro W3","Hiragino Kaku Gothic Pro", Osaka,"ＭＳ Ｐゴシック","MS PGothic",Vardana,sans-serif;
+// }
+html {
+// 	width: 100%;
+	background: $colHtmlBG;
+// 	font-family: $fontHtml;
+// 	color: $colHtmlText;
+}
+// body { width:100%; margin: 0 auto;}
+// * { box-sizing:border-box;}
+// a {
+// 	@include link-colors($colLink,$colHover,$colActive,$colVisited,$colForcus);
+// 	cursor: pointer;
+// }
+// a:hover {text-decoration: none;}
+// p {	color: $colText; }
+
+// // Text Rhythm
+// html { font-size: 16px; line-height: 1.5rem;}
+// h1,h2{ @include rhythm-margins(1,1); }
+// h3,h4,h5 { @include rhythm-margins(1,1); }
+// h1 { @include adjust-font-size-to($fos-h1,2); }
+// h2 { @include adjust-font-size-to($fos-h2,2); }
+// h3 { @include adjust-font-size-to($fos-h3,1); }
+// h4 { @include adjust-font-size-to($fos-h4,1); }
+// h5 { @include adjust-font-size-to($fos-h5,1); }
+// @media screen and (min-width: 640px) {
+// html { font-size: 16px; line-height: 1.5rem;}
+// h1,h2{ @include rhythm-margins(2,1); }
+// h3,h4,h5 { @include rhythm-margins(1,1); }
+// h1 { @include adjust-font-size-to($fos-h1p,2); }
+// h2 { @include adjust-font-size-to($fos-h2p,2); }
+// h3 { @include adjust-font-size-to($fos-h3p,1); }
+// h4 { @include adjust-font-size-to($fos-h4,1); }
+// h5 { @include adjust-font-size-to($fos-h5,1); }
+// }
+
+// @mixin fos-tl {
+// 	font-size: $fos-tl + px;
+// 	font-size: $fos-tl / 16 + rem;
+// }
+// @mixin fos-tm {
+// 	font-size: $fos-tm + px;
+// 	font-size: $fos-tm / 16 + rem;
+// }
+// @mixin fos-ts {
+// 	font-size: $fos-ts + px;
+// 	font-size: $fos-ts / 16 + rem;
+// }
+// @mixin fos-tss {
+// 	font-size: $fos-ts + px;
+// 	font-size: $fos-ts / 16 + rem;
+// }
+// .fos-tl { @include fos-tl();}
+// .fos-tm { @include fos-tm();}
+// .fos-ts { @include fos-ts();}
+// .fos-tss { @include fos-tss();}

@@ -1,0 +1,327 @@
+/*
+- header row footer > container
+- sideNav
+- contentBox
+- footer
+
+media query 640
+sample -----------------------
+@include mque(sp){
+	p {	font-weight: normal;}
+}
+------------------------------
+*/
+
+/*--------------------------------------------------
+header row footer > container
+-------------------------------------------------- */
+header,.row,footer {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	overflow:hidden;
+}
+header::before,header::after,
+footer::before,footer::after,
+.row::before ,
+.container::after { clear:both;}
+
+header{
+	*zoom:1;
+	position: relative;
+	@include pat(16);
+	@include mab(16);
+		@include mque(pc) {
+			@include mab(32);
+		}
+	h1 {
+		margin : 0;
+		display: block;
+		text-align: center;
+	}
+	h1, img {
+		@include wid(276);
+		@include hei(137);		
+	}
+	span {display: none;}
+}
+.container {
+	width: 100%;
+	margin: 0 auto;
+	@include maxw(640);
+	@include padding(0,16,0,16);
+		@include mque(pc) {
+			@include maxw(960);
+		}
+}
+
+/* header > nav
+-------------------------------------------------- */
+header {
+	.container {
+		display: -webkit-flex;
+		display: flex;
+		flex-direction: column;
+			@include mque(pc) {
+				flex-direction: row;
+			}
+		h1 {
+			margin: 0 auto;
+			@include mque(pc) {
+				margin: 0 auto 0 0;
+			}
+		}
+	}
+	.navBox {
+		a, a:visited {
+			color: $colSub02;
+		}
+		@include hei(112);
+		display: block;
+		@include mque(pc) {
+				@include pat(24);
+				@include hei(144);
+			}
+	}
+	nav {
+		ul {
+			float: left;
+		}
+		li {
+			@include mar(16);
+			float: left;
+		}
+	}
+	#snsNav {
+		position: relative;
+		text-align: center;
+		@include top(16);
+			@include mque(pc) {
+				@include right(0);
+			}
+	}
+	#mainNav {
+		position: relative;
+		@include top(32);
+		@include fos(16);
+				@include mque(pc) {
+					@include right(0);
+				}
+	}
+	a.btnCart {
+		@include wid(82);
+		@include hei(82);
+		margin: 0 auto 16px auto;
+		margin: 0 auto 1rem auto;
+		display: block;
+		position: relative;
+		background-image: url(images/btnCart.svg);
+		background-repeat: no-repeat;
+			@include mque(pc) {
+				margin: 0;
+				@include top(30);
+			}
+	}
+	span {
+		display: none;
+	}
+}
+/* footer
+-------------------------------------------------- */
+footer {
+	background: $colMain;
+	color: #FFFFFF;
+	.container {
+		@include padding(16,16,16,16);
+	}
+	nav {
+			@include mque(pc) {
+				@include mab(32);
+				@include pat(32);
+			}
+	}
+	.column3 {
+		li {
+			width: 98%;
+		}
+		flex-direction: column;
+	}
+		@include mque(pc) {
+			.column3 {
+				flex-direction: row;
+			}
+		}
+	img {
+		width: 208px !important;
+		width: 13rem !important;
+	}
+	#cr {
+ 		@include fos(14);
+ 		text-align: center;
+		color: #FFFFFF;
+	}
+	#footerNav {
+		@include hei(24);
+		color: #FFFFFF;
+		font-weight: bold;
+		@include margin(16,0,48,0)
+	}
+	li {
+		display: block;
+		@include padding(0,16,0,0);
+		a, a:visited {
+			color: #FFFFFF;
+		}
+	}
+}
+
+/*--------------------------------------------------
+sideNav
+-------------------------------------------------- */
+#sideNav {
+	font-family: 'Source Sans Pro', sans-serif;
+	display: none;
+	h1 {
+		font-weight: 700;
+		text-align: center;
+		color: #666666;
+	}
+	@include wid(208);
+	@include margin(0,32,0,0);
+	float: left;
+	ul {
+		@include minh(220); 
+		background: $colMain;
+		border-radius: 8px;
+		font-weight: 400;
+		@include padding(16,16,16,16);
+	}
+	li {
+		a {
+			color: #FFFFFF;
+			@include padding(10,2,8,5);
+			display: block;
+		}
+	}
+		@include mque(pc) {
+			display: block;
+		}
+}
+
+
+/*--------------------------------------------------
+ContentBox
+-------------------------------------------------- */
+.contentBox {
+	width: 100%;
+	@include maxw(688);
+	@include minh(320);
+	padding: 0;
+	overflow: hidden;
+	::after{clear: both;}
+
+	@include mque(pc) {
+		@include pad(48);
+		@include minh(460);
+	}
+}
+.content {margin: 0 auto; padding: 0; width: 96% !important;}
+.content {@include mab(32);}
+
+/* Common
+-------------------------------------------------- */
+
+/*--------------------------------------------------
+archive.php
+-------------------------------------------------- */
+
+
+
+/* --------------------------------------------------
+index Promo
+-------------------------------------------------- */
+#mainPromo {
+	margin: 0; 
+	@include mab(32);
+	position: relative;
+	span {display: none;}
+	img {
+		border: solid 2px #e5e5e5;
+		border-radius: 1px;
+	}
+	@include mque(pc) {
+		margin: 0 auto; @include mab(32);
+	}
+}
+#indexArrowLe, #indexArrowRi {
+	display: none;
+		@include mque(pc) {
+			display: block;	
+		}
+	@include wid(42);
+	@include hei(42);
+	position: absolute;
+	@include top(160);
+}
+#indexArrowLe {
+	background: url(images/indexPromoArrowLe.jpg);
+	@include left(120);
+}
+#indexArrowRi {
+	background: url(images/indexPromoArrowRi.jpg);
+	@include right(120);
+}
+
+/*--------------------------------------------------
+Item
+-------------------------------------------------- */
+.containerItem {
+	width: 100%;
+		@include mque(pc) {
+			width: 48%;
+			float: left;
+		}
+}
+#item {
+	.itemImgBox {
+		position: relative;
+		span {display: none;}
+	}
+	.itemImgBox img {
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+			@include mque(pc) {
+				@include wid(360);
+			}
+	}
+		@include mque(pc) {
+			.itemThuBox {
+				@include wid(360);
+				margin: 0 auto;
+			}	
+		}
+}
+#itemArrowLe, #itemArrowRi {
+	display: none;
+		@include mque(pc) {
+			display: none;	
+		}
+	@include wid(42);
+	@include hei(42);
+	position: absolute;
+	@include top(192);
+}
+#itemArrowLe {
+	background: url(images/indexPromoArrowLe.jpg);
+	@include left(80);
+}
+#itemArrowRi {
+	background: url(images/indexPromoArrowRi.jpg);
+	@include right(80);
+}
+
+
+
+
+
